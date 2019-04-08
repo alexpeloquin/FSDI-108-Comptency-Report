@@ -1,0 +1,23 @@
+
+<h1>Registered Users on the System</h1>
+
+<div>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>First</th>
+        <th>Last</th>
+        <th>User Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of allUsers">
+        <td>{{user.firstName}}</td>
+        <td>{{user.lastName}}</td>
+        <td>{{user.userName}}</td>
+        <td>{{user.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
